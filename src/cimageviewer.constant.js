@@ -21,7 +21,7 @@
      */
     CIV.defaultOptions = {
         /**
-         * 图片列表
+         * 图片列表，参数可以是图片链接或者img标签
          */
         list: null,
 
@@ -33,7 +33,22 @@
         /**
          * 是否循环查看，默认为 true
          */
-        loop: false,
+        loop: true,
+
+        /**
+         * 是否展示图片序号，默认为 true
+         */
+        orderNumber: true,
+
+        /**
+         * 是否展示关闭按钮，默认为 true
+         */
+        close: true,
+
+        /**
+         * 是否展示左右切换箭头，默认为 true
+         */
+        arrow: true,
 
         /**
          * 是否预加载图片，默认为 false
@@ -49,6 +64,11 @@
          * 保存按钮文本，默认为 "保存图片"
          */
         saveBtn: "保存图片",
+
+        /**
+         * 禁用默认保存逻辑
+         */
+        noSave: false,
 
         /**
          * 弹窗背景色，默认为黑色 "#000"
